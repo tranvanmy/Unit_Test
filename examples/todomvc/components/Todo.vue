@@ -45,6 +45,7 @@ export default {
       'deleteTodo'
     ]),
     doneEdit (e) {
+      
       const value = e.target.value.trim()
       const { todo } = this
       if (!value) {
@@ -60,6 +61,7 @@ export default {
       }
     },
     cancelEdit (e) {
+      console.log(111);
       e.target.value = this.todo.text
       this.editing = false
     }

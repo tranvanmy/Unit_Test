@@ -18,6 +18,7 @@ export default {
   ]),
   methods: mapActions([
     'increment',
+    'demo',
     'decrement',
     'incrementIfOdd',
     'incrementAsync'

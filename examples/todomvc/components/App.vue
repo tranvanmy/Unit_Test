@@ -78,7 +78,7 @@ export default {
   },
   
   mounted : function(){
-    console.log('asdhhi');
+    console.log(1);
   },
   methods: {
     addTodo (e) {

@@ -58,8 +58,8 @@
         },
         "workbench.action.closeActiveEditor": {
             "id": "workbench.action.closeActiveEditor",
-            "label": "Ctrl+W",
-            "isNative": true
+            "label": "Ctrl+K Ctrl+DownArrow",
+            "isNative": false
         },
         "workbench.action.quit": {
             "id": "workbench.action.quit",
@@ -118,12 +118,12 @@
         },
         "editor.action.commentLine": {
             "id": "editor.action.commentLine",
-            "label": "Ctrl+/",
+            "label": "Ctrl+Shift+/",
             "isNative": true
         },
         "editor.action.blockComment": {
             "id": "editor.action.blockComment",
-            "label": "Ctrl+Shift+A",
+            "label": "Ctrl+Shift+/",
             "isNative": true
         },
         "editor.action.insertCursorAbove": {
@@ -138,7 +138,7 @@
         },
         "editor.action.insertCursorAtEndOfEachLineSelected": {
             "id": "editor.action.insertCursorAtEndOfEachLineSelected",
-            "label": "Shift+Alt+I",
+            "label": "Ctrl+Shift+L",
             "isNative": true
         },
         "editor.action.addSelectionToNextFindMatch": {
@@ -148,7 +148,7 @@
         },
         "editor.action.selectHighlights": {
             "id": "editor.action.selectHighlights",
-            "label": "Ctrl+Shift+L",
+            "label": "Alt+F3",
             "isNative": true
         },
         "editor.action.copyLinesUpAction": {
@@ -158,17 +158,17 @@
         },
         "editor.action.copyLinesDownAction": {
             "id": "editor.action.copyLinesDownAction",
-            "label": "Ctrl+Shift+Alt+Down",
+            "label": "Ctrl+Shift+D",
             "isNative": true
         },
         "editor.action.moveLinesUpAction": {
             "id": "editor.action.moveLinesUpAction",
-            "label": "Alt+Up",
+            "label": "Ctrl+Shift+Up",
             "isNative": true
         },
         "editor.action.moveLinesDownAction": {
             "id": "editor.action.moveLinesDownAction",
-            "label": "Alt+Down",
+            "label": "Ctrl+Shift+Down",
             "isNative": true
         },
         "editor.action.selectAll": {
@@ -243,12 +243,12 @@
         },
         "workbench.action.toggleZenMode": {
             "id": "workbench.action.toggleZenMode",
-            "label": "Ctrl+K Z",
-            "isNative": false
+            "label": "Shift+F11",
+            "isNative": true
         },
         "workbench.action.splitEditor": {
             "id": "workbench.action.splitEditor",
-            "label": "Ctrl+\\",
+            "label": "Shift+Alt+2",
             "isNative": true
         },
         "workbench.action.toggleEditorGroupLayout": {
@@ -258,8 +258,8 @@
         },
         "workbench.action.toggleSidebarVisibility": {
             "id": "workbench.action.toggleSidebarVisibility",
-            "label": "Ctrl+B",
-            "isNative": true
+            "label": "Ctrl+K Ctrl+B",
+            "isNative": false
         },
         "workbench.action.togglePanel": {
             "id": "workbench.action.togglePanel",
@@ -288,12 +288,12 @@
         },
         "workbench.action.navigateBack": {
             "id": "workbench.action.navigateBack",
-            "label": "Ctrl+Alt+-",
+            "label": "Alt+-",
             "isNative": true
         },
         "workbench.action.navigateForward": {
             "id": "workbench.action.navigateForward",
-            "label": "Ctrl+Shift+-",
+            "label": "Shift+Alt+-",
             "isNative": true
         },
         "workbench.action.nextEditor": {
@@ -343,17 +343,17 @@
         },
         "workbench.action.quickOpen": {
             "id": "workbench.action.quickOpen",
-            "label": "Ctrl+P",
+            "label": "Ctrl+E",
             "isNative": true
         },
         "workbench.action.gotoSymbol": {
             "id": "workbench.action.gotoSymbol",
-            "label": "Ctrl+Shift+O",
+            "label": "Ctrl+;",
             "isNative": true
         },
         "workbench.action.showAllSymbols": {
             "id": "workbench.action.showAllSymbols",
-            "label": "Ctrl+T",
+            "label": "Ctrl+Shift+R",
             "isNative": true
         },
         "editor.action.goToDeclaration": {
@@ -401,11 +401,6 @@
             "label": "F11",
             "isNative": true
         },
-        "workbench.action.debug.stepOut": {
-            "id": "workbench.action.debug.stepOut",
-            "label": "Shift+F11",
-            "isNative": true
-        },
         "workbench.action.debug.continue": {
             "id": "workbench.action.debug.continue",
             "label": "F5",
@@ -431,8 +426,24 @@
     "themeBackground": "#1e1e1e",
     "openedPathsList": {
         "workspaces": [
-            "/home/tran.van.my/Desktop/node_modules/vuex"
+            "/home/tran.van.my/Desktop/node_modules/vuex",
+            "/home/tran.van.my/Desktop/Vuex"
         ],
         "files": []
-    }
+    },
+    "windowsState": {
+        "openedWindows": [],
+        "lastActiveWindow": {
+            "folderPath": "/home/tran.van.my/Desktop/node_modules/vuex",
+            "backupPath": "/home/tran.van.my/Desktop/node_modules/vuex/~/.vscode-root/Backups/2a7eff801b6afbf78d26fe75fd0a830b",
+            "uiState": {
+                "mode": 0,
+                "x": 65,
+                "y": 24,
+                "width": 1855,
+                "height": 1056
+            }
+        }
+    },
+    "pickerWorkingDir": "/home/tran.van.my/Desktop/node_modules"
 }
