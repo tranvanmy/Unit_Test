@@ -8,7 +8,7 @@
       <input class="new-todo"
         autofocus
         autocomplete="off"
-        placeholder="What needs to be done?"
+        placeholder="What needs to be done ahisahsi?"
         @keyup.enter="addTodo">
     </header>
     <!-- main section -->
@@ -76,12 +76,17 @@ export default {
       return this.todos.filter(todo => !todo.done).length
     }
   },
+  
+  mounted : function(){
+    console.log('asdhhi');
+  },
   methods: {
     addTodo (e) {
       var text = e.target.value
       if (text.trim()) {
         this.$store.commit('addTodo', { text })
       }
+      console.log(111);
       e.target.value = ''
     },
     ...mapMutations([
