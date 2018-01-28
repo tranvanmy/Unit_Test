@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <button @click="toggleMe">Toggle me</button>
+    <hr/>
+    <img  v-if="isTrue" src="./assets/logo.png">
     <router-link to="/demo">Home</router-link>
     <router-view/>
   </div>
@@ -8,7 +10,22 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  computed: {
+    isTrue: function() {
+      return this.$store.getters.isTrue;
+    }
+  },
+  data: function () {
+    return {
+    }
+  },
+  methods: {
+    toggleMe: function () {
+      console.log(this.$store.getters.isTrue);
+      this.$store.dispatch('toggle1');
+    }
+  }
 }
 </script>
 

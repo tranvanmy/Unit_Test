@@ -1,5 +1,8 @@
 <template>
-  <div class="hello">
+<div>
+
+<button @click="togglMe"> Toggle Me</button>
+  <div v-show="isTrue" class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -81,15 +84,27 @@
       </li>
     </ul>
   </div>
+</div>
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
+  computed: {
+    isTrue: function() {
+      return this.$store.getters.isTrue;
+    }
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  methods: {
+      togglMe: function () {
+          //  return this.isTrue = !this.isTrue;
+          this.$store.dispatch('toggle1');
+      }
   }
 }
 </script>
